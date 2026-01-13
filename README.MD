@@ -29,9 +29,20 @@ At boot time, the EC2 instance installs:
 ---
 ## 📁 Repository Structure
 
-├── provider.tf
+- **├── provider.tf
 ├── ec2.tf
 ├── security_group.tf
 ├── ebs.tf
 ├── Docker_kubectl_eksctl_Install.sh
 └── README.md
+
+## 🧰 Technologies Used
+
+- **Terraform**
+- **AWS EC2**
+- **AWS EBS**
+- **AWS S3 (Remote State)**
+- **Docker**
+- **Kubernetes**
+- **eksctl**
+- **Bash**
