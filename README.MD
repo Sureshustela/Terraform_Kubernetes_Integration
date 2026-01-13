@@ -40,5 +40,5 @@ At boot time, the EC2 instance installs:
 
 ## Cluster Creation processs
 
-- **run below command**
+- **Step 1:**
 -- eksctl create cluster --config-file=eksctl.yaml
