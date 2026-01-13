@@ -29,7 +29,7 @@ At boot time, the EC2 instance installs:
 ---
 ## 📁 Repository Structure
 
-- **├── provider.tf
+- **├── provider.tf**
 ├── ec2.tf
 ├── security_group.tf
 ├── ebs.tf
