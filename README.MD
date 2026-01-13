@@ -38,7 +38,7 @@ At boot time, the EC2 instance installs:
 - **eksctl**
 - **Bash**
 
-## Cluster Creation processs
+## EKS Cluster Creation processs
 
 - ***Step 1:***
 eksctl create cluster --config-file=eksctl.yaml
