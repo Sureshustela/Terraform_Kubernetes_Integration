@@ -8,3 +8,4 @@ eksctl create cluster --config-file=eksctl.yaml
 kubectl get nodes
 
 - ***Checking the nodes*** <br> 
+kubectl get ns (or) kubectl get namespaces
