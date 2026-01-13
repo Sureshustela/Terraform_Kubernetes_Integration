@@ -1,9 +1,8 @@
-## EKS Cluster Creation processs
+## EKS Cluster Process
 
 - ***Step 1: Creating the cluster*** <br>
 eksctl create cluster --config-file=eksctl.yaml
 
 - ***Step 2: Checking the nodes*** <br> 
-<span style="color: red;">This text is red</span>
 kubectl get nodes
 
