@@ -9,3 +9,8 @@ kubectl get nodes
 
 - ***Checking namespace*** <br> 
 kubectl get ns (or) kubectl get namespaces
+
+
+- ***Create namespace*** <br> 
+kubectl create namespace roboshop
+
