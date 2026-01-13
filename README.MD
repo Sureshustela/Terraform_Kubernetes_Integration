@@ -37,3 +37,8 @@ At boot time, the EC2 instance installs:
 - **Kubernetes**
 - **eksctl**
 - **Bash**
+
+## Cluster Creation processs
+
+- **run below command**
+eksctl create cluster --config-file=eksctl.yaml
