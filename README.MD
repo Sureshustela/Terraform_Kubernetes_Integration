@@ -1,0 +1,32 @@
+# AWS EC2 Provisioning with Terraform + Docker, kubectl & eksctl Bootstrap
+
+This project demonstrates **end-to-end infrastructure provisioning on AWS using Terraform**, combined with a **bootstrap Bash script** to install **Docker**, **kubectl**, and **eksctl** on an EC2 instance.
+
+It reflects a **real-world DevOps workflow** covering:
+- Infrastructure as Code (IaC)
+- Secure networking
+- Remote Terraform state management
+- Automated instance configuration
+- EKS tooling readiness
+
+---
+
+## 🚀 Project Overview
+
+Using Terraform, this project provisions:
+
+- An **EC2 instance** in AWS
+- A **Security Group** with SSH access
+- A **50GB EBS data volume** attached to EC2
+- **Remote Terraform state** stored in S3
+- Automated software installation via **user_data**
+
+At boot time, the EC2 instance installs:
+- Docker Engine
+- kubectl (EKS compatible)
+- eksctl (latest)
+
+---
+
+## 🏗 Architecture
+
