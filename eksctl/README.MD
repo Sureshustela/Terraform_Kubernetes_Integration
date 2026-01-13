@@ -4,7 +4,7 @@
 eksctl create cluster --config-file=eksctl.yaml
 
 ---
-- *** Checking the nodes*** <br> 
+- ***Checking the nodes*** <br> 
 kubectl get nodes
 
 - ***Checking the nodes*** <br> 
