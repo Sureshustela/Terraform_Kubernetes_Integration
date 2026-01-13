@@ -7,7 +7,7 @@ kubectl get ns (or) kubectl get namespaces
 - ***Create namespace through command*** <br> 
 kubectl create namespace roboshop
 
-- ***Check api resources *** <br> 
+- ***Check api resources*** <br> 
 kubectl api-resources
 
 
