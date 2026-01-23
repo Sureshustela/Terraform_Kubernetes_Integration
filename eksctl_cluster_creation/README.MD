@@ -4,7 +4,14 @@
 eksctl create cluster --config-file=eksctl.yaml
 
 ---
+
+- ***Delete Cluster*** <br> 
+eksctl delete cluster --config-file=eksctl.yaml
+
+---
+
 - ***Checking the nodes*** <br> 
 kubectl get nodes
+
 
 

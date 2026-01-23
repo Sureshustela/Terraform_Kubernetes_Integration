@@ -1,15 +1,14 @@
 resource "aws_instance" "ec2" {
-ami = "ami-09c813fb71547fc4f"
+ami = "ami-069e612f612be3a2b"
 instance_type = "t3.micro"
 vpc_security_group_ids = [aws_security_group.ssh22.id]
 user_data = file ("Docker_kubectl_eksctl_Install.sh")
-
+key_name = "practice"
 tags = {
   Name = "suresh"
   Project = "Roboshop"
   Environment = "Dev"
 }
-
 }
 
 
@@ -32,5 +31,6 @@ from_port = 0
 protocol = "-1"
 cidr_blocks = ["0.0.0.0/0"]
 }
+
 }
 

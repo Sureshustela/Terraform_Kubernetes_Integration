@@ -9,7 +9,7 @@ terraform {
   backend "s3" {
     bucket = "suresh-practice-bucket"
     key = "remote-state"
-    encrypt = true
+    encrypt = true  
     use_lockfile = true
     region = "us-east-1"
   }

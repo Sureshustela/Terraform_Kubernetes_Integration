@@ -1,7 +1,7 @@
 resource "aws_ebs_volume" "ebs_volume" {
   availability_zone = aws_instance.ec2.availability_zone
   size              = 50
-  type              = "gp2"
+  type              = "gp3"
 
   tags = {
     Name = "ebs-volume-terraform-demo"
