@@ -6,6 +6,9 @@
 # Description   : To install docker & kubectl,eksctl
 # Version       : v1
 # ***********************************
+growpart /dev/nvme0n1 4
+lvextend -L +30G /dev/mapper/RootVG-varVol
+xfs_growfs /var
 
 # Update system packages
 sudo dnf update -y
@@ -55,3 +58,5 @@ kubectl version --client --short
 eksctl version  
 
 echo "Docker, kubectl, and eksctl have been installed successfully."
+
+
