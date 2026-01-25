@@ -18,6 +18,16 @@ kubectl delete -f 01-namespace.yaml
 - ***creating nginx pod*** <br> 
 kubectl apply -f 02-pod.yaml
 
+- ***checking PODs*** <br> 
+kubectl get pods
+
+- ***check Pods in specific namespace*** <br> 
+kubectl get pods -n roboshop
+
+
+
+
+
 
 
 
