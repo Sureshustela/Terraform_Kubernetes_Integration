@@ -1,5 +1,5 @@
 resource "aws_instance" "ec2" {
-ami = "ami-069e612f612be3a2b"
+ami = var.ami_number
 instance_type = "t3.micro"
 vpc_security_group_ids = [aws_security_group.ssh22.id]
 user_data = file ("Docker_kubectl_eksctl_Install.sh")
