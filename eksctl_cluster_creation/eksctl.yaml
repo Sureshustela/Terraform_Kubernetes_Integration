@@ -7,6 +7,6 @@ metadata:
 
 managedNodeGroups:
   - name: cluster-ng-1
-    instanceTypes: ["t3.micro"]
+    instanceTypes: ["t3.small"]
     desiredCapacity: 2
     spot: true
