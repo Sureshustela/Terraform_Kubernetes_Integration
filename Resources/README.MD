@@ -19,10 +19,18 @@ kubectl delete -f 01-namespace.yaml
 kubectl apply -f 02-pod.yaml
 
 - ***checking PODs*** <br> 
-kubectl get pods
+kubectl get pods 
+
+- ***Details PODs*** <br> 
+kubectl get pods -o wide 
 
 - ***check Pods in specific namespace*** <br> 
 kubectl get pods -n roboshop
+
+
+- ***check Pods in specific namespace*** <br> 
+kubectl get pods -n roboshop
+
 
 
 
