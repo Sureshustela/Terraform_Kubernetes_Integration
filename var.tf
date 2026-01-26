@@ -11,6 +11,6 @@ variable "instance_type" {
 
 variable "private_key_path" {
     type = string
-    default = "f:\\shell"
+    default = "f:/shell"
 }
 

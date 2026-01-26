@@ -16,6 +16,9 @@ resource "aws_instance" "ec2" {
     host = self.public_ip
   }
 
+  provisioner "local-exec" {
+    command = "echo ${self.public_ip}"  
+  }
   provisioner "file" {
     source = "Docker_kubectl_eksctl_Install.sh"
     destination = "/tmp/Docker_kubectl_eksctl_Install.sh"
@@ -34,15 +37,9 @@ resource "aws_instance" "ec2" {
       "sudo systemctl enable nginx",
       "sudo systemctl start nginx"  
     ]
-    when = create
-    }  
+  }  
 
-  provisioner "remote-exec" {
-    inline = [ 
-      "sudo systemctl stop nginx"   
-    ]
-    when = destroy
-  }
+  
 }
 
 
