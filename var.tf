@@ -9,3 +9,8 @@ variable "instance_type" {
     default = "t3.small"
 }
 
+variable "private_key_path" {
+    type = string
+    default = "/f/shell"
+}
+

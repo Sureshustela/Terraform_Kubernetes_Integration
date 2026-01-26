@@ -2,12 +2,30 @@ resource "aws_instance" "ec2" {
 ami = var.ami_id
 instance_type = var.instance_type
 vpc_security_group_ids = [aws_security_group.ssh22.id]
-user_data = file ("Docker_kubectl_eksctl_Install.sh")
 key_name = "practice"
 tags = {
   Name = "suresh"
   Project = "Roboshop"
   Environment = "Dev"
+}
+
+connection {
+  type = "ssh"
+  user = "ec2-user"
+  private_key = file(var.private_key_path)
+  host = self.public_ip
+}
+
+provisioner "file" {
+  source = "Docker_kubectl_eksctl_Install.sh"
+  destination = "/tmp/Docker_kubectl_eksctl_Install.sh"
+}
+
+provisioner "remote-exec" {
+  inline = [ 
+    "chmod +x /tmp/Docker_kubectl_eksctl_Install.sh",
+    "sudo /tmp/Docker_kubectl_eksctl_Install.sh"  
+   ]
 }
 }
 
