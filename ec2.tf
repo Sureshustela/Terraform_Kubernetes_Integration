@@ -19,6 +19,7 @@ resource "aws_instance" "ec2" {
   provisioner "local-exec" {
     command = "echo ${self.public_ip}"  
   }
+
   provisioner "file" {
     source = "Docker_kubectl_eksctl_Install.sh"
     destination = "/tmp/Docker_kubectl_eksctl_Install.sh"
@@ -39,7 +40,6 @@ resource "aws_instance" "ec2" {
     ]
   }  
 
-  
 }
 
 

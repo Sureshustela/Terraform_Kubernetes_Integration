@@ -51,7 +51,12 @@ tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
 # Installs eksctl binary system-wide and Removes temporary binary
 sudo install -m 0755 /tmp/eksctl /usr/local/bin && rm /tmp/eksctl
 
-#AWS CLI installation commands
+#Install git in system
+
+
+#GIT & AWS CLI installation commands
+dnf install unzip -y
+dnf install git -y
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
