@@ -30,6 +30,7 @@ sudo systemctl enable docker
 sudo usermod -aG docker ec2-user
 
 # Install kubectl (EKS compatible version)
+cd /tmp
 curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.34.2/2025-11-13/bin/linux/amd64/kubectl
 
 # Makes kubectl executable
