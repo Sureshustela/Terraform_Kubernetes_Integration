@@ -38,7 +38,7 @@ At boot time, the EC2 instance installs:
 - **eksctl**
 - **Bash**
 
-## Verify installations 
+## Installation Verification commands 
 - **docker --version**
 - **kubectl version --client**
 - **eksctl version** 
