@@ -56,11 +56,5 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 
-# Verify installations 
-docker --version
-kubectl version --client
-eksctl version  
-
-echo "Docker, kubectl, and eksctl have been installed successfully."
 
 
