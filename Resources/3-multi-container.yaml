@@ -3,11 +3,12 @@ kind: Pod
 metadata: 
   name: multicontainer
   namespace: sample-ns
-  project: p1
+  labels:
+    project: p1
 spec:
   containers:
     - name: nginx
       image: nginx
     - name: sidecar
       image: almalinux:9
-      command: ["sleep","1000"]
+      command: ["sleep", "1000"]
