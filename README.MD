@@ -42,3 +42,4 @@ At boot time, the EC2 instance installs:
 - **docker --version**
 - **kubectl version --client**
 - **eksctl version** 
+- **aws --version**
